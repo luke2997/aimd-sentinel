@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Environment/secrets
+.env
+.env.*
+!.env.example
+
+# macOS/editor
+.DS_Store
+.vscode/
+.idea/
+
+# Local/generated data
+backups/
+final_demo/
+reports/
+notebooks/
+*.numbers
+*.zip
+
+# Database dumps / local backups
+*.sql
+!sql/*.sql
+
+# Large/raw source files not needed in public repo
+data/fda_ai_list_full.csv
+data/fda_ai_list_radiology_top300.csv
+data/demo_candidate_discovery.csv
+data/seed_devices_v21.csv
+data/manual*.csv
+data/*prefilled*.csv
+
+# Keep final small demo CSVs
+!data/seed_devices_v21_dedup.csv
+!data/final_demo_event_validation_labeled.csv
+!data/final_demo_red_dot_enforcement_validation_labeled.csv

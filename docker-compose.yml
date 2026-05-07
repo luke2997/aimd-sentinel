@@ -1,0 +1,20 @@
+services:
+  postgres:
+    image: pgvector/pgvector:pg16
+    container_name: aimd_sentinel_postgres
+    environment:
+      POSTGRES_DB: aimd_sentinel
+      POSTGRES_USER: aimd
+      POSTGRES_PASSWORD: aimd
+    ports:
+      - "5432:5432"
+    volumes:
+      - aimd_pgdata:/var/lib/postgresql/data
+      - ./sql/schema.sql:/docker-entrypoint-initdb.d/001_schema.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U aimd -d aimd_sentinel"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+volumes:
+  aimd_pgdata:
