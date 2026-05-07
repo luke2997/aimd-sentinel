@@ -47,3 +47,11 @@ data/final_demo_red_dot_enforcement_validation.csv
 data/seed_devices.csv
 data/seed_devices_v2.csv
 .gitkeep
+
+# Extra local/intermediate demo files
+data/final_demo_event_validation.csv
+data/final_demo_event_validation_labeled_v2.csv
+data/final_demo_red_dot_enforcement_validation.csv
+data/seed_devices.csv
+data/seed_devices_v2.csv
+.gitkeep
