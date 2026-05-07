@@ -39,3 +39,11 @@ data/*prefilled*.csv
 !data/seed_devices_v21_dedup.csv
 !data/final_demo_event_validation_labeled.csv
 !data/final_demo_red_dot_enforcement_validation_labeled.csv
+
+# Extra local/intermediate demo files
+data/final_demo_event_validation.csv
+data/final_demo_event_validation_labeled_v2.csv
+data/final_demo_red_dot_enforcement_validation.csv
+data/seed_devices.csv
+data/seed_devices_v2.csv
+.gitkeep
